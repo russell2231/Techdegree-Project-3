@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Athiti', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  background-color: #2D3945;
+}
+
+.main-title {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.about {
+  text-align: center;
+  margin: 1em;
+}
+
+.subtitle {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.about p {
+  margin-top: 0;
+  color: #aaa;
+}
+
+.top {
+  width: 90%;
+  border: 2px solid black;
+  margin-bottom: 3px;
+}
+
+.bottom {
+  width: 90%;
+  border: 1px solid black;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.box input,
+.box select {
+  flex-basis: 100%;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 1.5em 0.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+
+.fieldset1 .zip {
+  width: 50%;
+}
+
+.fieldset1 input:focus {
+  padding-left: 1em;
+  outline: 2px solid #2D3945;
+  background: transparent;
+}
+
+select:focus {
+  outline: 2px solid #2D3945;
+}
+
+.break {
+  border: 1px solid black;
+  margin: 1em 0;
+}
+
+.fieldset2 div {
+  margin: 0.5em 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 1em;
+}
+
+.fieldset2 .format {
+  margin: 1em 0;
+}
+
+textarea {
+  width: 100%;
+  background-color: #f4f4f4;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+textarea:focus {
+  outline: 2px solid #2D3945;
+  padding: 1em;
+  background: transparent;
+}
+
+button {
+  width: 100%;
+  background-color: #4EBBB5;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+button:focus {
+  outline: 2px solid #2D3945;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+}
+
+label {
+  color: #495D70;
+}
+
+input[placeholder="Required"]::placeholder {
+  text-align: right;
+  padding-right: 2em;
+  font-style: italic;
+}
+
+input[type=checkbox]:not(:checked) {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .box {
+    flex-direction: row;
+  }
+
+  .box label {
+    flex: 0 0 11rem;
+    align-self: center;
+  }
+
+  .box .zip {
+    flex-basis: 30%;
+  }
+}
+
+
+
